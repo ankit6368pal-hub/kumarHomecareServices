@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Microwave Repair at Doorstep – Kumar Homecare Services</title>
+  <meta name="description" content="Expert microwave repair service at your doorstep in Delhi NCR & Greater Noida. Same-day service, genuine parts, 90-day warranty. Call +91 70538 36368."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/x-icon" href="/public/logo.png"/>
+  <style>
+    .sp-hero{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+    .sp-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.04);}
+    .sp-hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,0,0,0.88) 0%,rgba(0,0,0,0.5) 60%,rgba(0,0,0,0.2) 100%);}
+    .sp-hero-content{position:relative;z-index:2;padding:140px 0 80px;}
+    .sp-breadcrumb{display:flex;align-items:center;gap:8px;font-size:0.82rem;color:#888;background:#fff;border-bottom:1px solid #eee;padding:12px 0;}
+    .sp-breadcrumb a{color:#888;text-decoration:none;transition:color .2s;}
+    .sp-breadcrumb a:hover{color:#0f0f0f;}
+    .sp-breadcrumb span{opacity:.4;}
+    .sp-bc-current{color:#0f0f0f;font-weight:600;opacity:1;}
+    .sp-eyebrow{display:inline-block;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;color:rgba(255,255,255,0.6);text-transform:uppercase;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);padding:7px 16px;border-radius:50px;margin-bottom:20px;}
+    .sp-headline{font-size:clamp(2rem,5vw,3.8rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-0.02em;text-transform:uppercase;margin-bottom:18px;max-width:680px;}
+    .sp-headline span{color:rgba(255,255,255,0.45);}
+    .sp-sub{font-size:1rem;color:rgba(255,255,255,0.62);line-height:1.75;max-width:440px;margin-bottom:36px;}
+    .sp-actions{display:flex;gap:14px;flex-wrap:wrap;}
+    .sp-trust{display:flex;gap:0;margin-top:52px;background:rgba(0,0,0,0.55);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,0.1);border-radius:16px;overflow:hidden;width:fit-content;}
+    .sp-trust-item{padding:18px 28px;display:flex;flex-direction:column;}
+    .sp-trust-item+.sp-trust-item{border-left:1px solid rgba(255,255,255,0.1);}
+    .sp-trust-num{font-size:1.4rem;font-weight:900;color:#fff;line-height:1;}
+    .sp-trust-lbl{font-size:0.68rem;color:rgba(255,255,255,0.45);margin-top:4px;white-space:nowrap;}
+    .breadcrumb{background:#f8f8f8;border-bottom:1px solid #e8e8e8;padding:14px 0;}
+    .breadcrumb-inner{display:flex;align-items:center;gap:8px;font-size:0.82rem;color:#888;}
+    .breadcrumb-inner a{color:#888;text-decoration:none;transition:color .2s;}
+    .breadcrumb-inner a:hover{color:#0f0f0f;}
+    .bc-sep{opacity:.4;}
+    .bc-current{color:#0f0f0f;font-weight:600;}
+    .issues-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px;}
+    .issue-card{background:#fff;border:1.5px solid #ebebeb;border-radius:18px;padding:28px 24px;transition:border-color .25s,box-shadow .25s,transform .25s;}
+    .issue-card:hover{border-color:#0f0f0f;box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-4px);}
+    .issue-icon{width:48px;height:48px;background:#0f0f0f;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+    .issue-icon svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+    .issue-card h4{font-size:0.95rem;font-weight:700;color:#0f0f0f;margin-bottom:8px;}
+    .issue-card p{font-size:0.82rem;color:#888;line-height:1.7;}
+    .feature-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px;}
+    .feature-card{background:#fff;border:1.5px solid #ebebeb;border-radius:16px;padding:24px 20px;text-align:center;transition:border-color .25s,box-shadow .25s;}
+    .feature-card:hover{border-color:#0f0f0f;box-shadow:0 6px 24px rgba(0,0,0,0.08);}
+    .feature-icon{width:56px;height:56px;background:#f3f4f6;border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:#0f0f0f;}
+    .feature-card h4{font-size:0.88rem;font-weight:700;color:#0f0f0f;margin-bottom:6px;}
+    .feature-card p{font-size:0.78rem;color:#999;line-height:1.6;}
+    .steps-inline{display:flex;align-items:flex-start;gap:0;margin-top:52px;}
+    .step-inline{flex:1;text-align:center;position:relative;}
+    .step-inline+.step-inline::before{content:'';position:absolute;top:28px;left:-50%;width:100%;height:2px;background:linear-gradient(to right,#0f0f0f,#ddd);z-index:0;}
+    .step-num{width:56px;height:56px;background:#0f0f0f;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:900;margin:0 auto 16px;position:relative;z-index:1;}
+    .step-inline h4{font-size:0.88rem;font-weight:700;color:#0f0f0f;margin-bottom:6px;}
+    .step-inline p{font-size:0.78rem;color:#999;line-height:1.6;max-width:160px;margin:0 auto;}
+    .price-section{background:#0f0f0f;padding:72px 0;}
+    .price-inner{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;}
+    .price-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;padding:7px 16px;border-radius:50px;text-transform:uppercase;margin-bottom:16px;}
+    .price-section h2{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:900;color:#fff;line-height:1.2;margin-bottom:12px;}
+    .price-section p{color:rgba(255,255,255,0.5);font-size:0.95rem;line-height:1.7;max-width:480px;}
+    .sp-faq{display:flex;flex-direction:column;gap:12px;margin-top:52px;}
+    .sp-cta{background:#0f0f0f;padding:80px 0;text-align:center;}
+    .sp-cta h2{font-size:clamp(1.8rem,3.5vw,3rem);font-weight:900;color:#fff;margin-bottom:16px;line-height:1.15;}
+    .sp-cta p{color:rgba(255,255,255,0.5);font-size:0.95rem;margin-bottom:36px;}
+    .sp-cta-phone{font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:#fff;margin-bottom:28px;}
+    .sp-cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+    @media(max-width:768px){
+      .sp-hero-content{padding:110px 0 60px;}
+      .sp-headline{font-size:1.7rem;}
+      .sp-sub{font-size:0.85rem;}
+      .sp-actions{flex-direction:column;max-width:280px;}
+      .sp-actions .btn{text-align:center;justify-content:center;}
+      .sp-trust{flex-wrap:wrap;width:100%;}
+      .sp-trust-item{flex:1;min-width:120px;padding:14px 16px;}
+      .issues-grid{grid-template-columns:1fr 1fr;}
+      .feature-bar{grid-template-columns:1fr 1fr;}
+      .steps-inline{flex-direction:column;align-items:center;gap:28px;}
+      .step-inline+.step-inline::before{display:none;}
+      .price-inner{grid-template-columns:1fr;text-align:center;}
+      .sp-cta-btns{flex-direction:column;align-items:center;}
+    }
+    @media(max-width:480px){.issues-grid{grid-template-columns:1fr;}.feature-bar{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo"><span class="loader-brand">KUMAR</span><span class="loader-sub">Homecare Services</span></div>
+    <div class="loader-spinner"></div>
+  </div>
+  <div id="scrollProgress" class="scroll-progress-bar"></div>
+  <div class="float-btns">
+    <a href="https://wa.me/917053836368" target="_blank" class="float-btn float-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+    <a href="tel:+917053836368" class="float-btn float-call" aria-label="Call Us"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><div class="logo-icon"><img src="/public/logo.png" alt="Kumar Homecare Services Logo"></div><div class="logo-text"><span class="logo-brand">KUMAR</span><span class="logo-sub">Homecare Services</span></div></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#services" class="nav-link active">Services</a>
+        <a href="index.html#why-us" class="nav-link">Why Choose Us</a>
+        <a href="index.html#reviews" class="nav-link">Reviews</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="index.html#contact" class="btn btn-primary nav-cta">Book Service</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="index.html#services" class="mobile-link">Services</a>
+    <a href="index.html#why-us" class="mobile-link">Why Choose Us</a>
+    <a href="index.html#reviews" class="mobile-link">Reviews</a>
+    <a href="index.html#contact" class="mobile-link">Contact</a>
+    <a href="index.html#contact" class="btn btn-primary mobile-cta">Book Service</a>
+  </div>
+
+  <div class="sp-breadcrumb">
+    <div class="container-wide">
+      <a href="index.html">Home</a><span>›</span>
+      <a href="index.html#services">Services</a><span>›</span>
+      <span class="sp-bc-current">Microwave Repair</span>
+    </div>
+  </div>
+
+  <section class="sp-hero">
+    <div class="sp-hero-bg" style="background-image:url('microwave_repair.png');"></div>
+    <div class="container-wide sp-hero-content">
+      <span class="sp-eyebrow"><svg viewBox="0 0 24 24" fill="none" width="13" height="13" style="display:inline;vertical-align:-1px;margin-right:6px"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Expert Repair · Delhi NCR & Greater Noida</span>
+      <h1 class="sp-headline">Microwave Repair<br><span>At Your Doorstep</span></h1>
+      <p class="sp-sub">Solo, grill, or convection microwave — we fix all types. Certified technicians, genuine parts, 90-day warranty.</p>
+      <div class="sp-actions">
+        <a href="tel:+917053836368" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" width="16" height="16" style="display:inline;vertical-align:-3px;margin-right:6px"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Call Now &ndash; Free Diagnosis</a>
+        <a href="https://wa.me/917053836368" target="_blank" class="btn btn-white"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="display:inline;vertical-align:-3px;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>WhatsApp Us</a>
+      </div>
+      <div class="sp-trust">
+        <div class="sp-trust-item"><span class="sp-trust-num">20+</span><span class="sp-trust-lbl">Years Experience</span></div>
+        <div class="sp-trust-item"><span class="sp-trust-num">2K+</span><span class="sp-trust-lbl">Microwaves Fixed</span></div>
+        <div class="sp-trust-item"><span class="sp-trust-num">30 Min</span><span class="sp-trust-lbl">Avg. Response</span></div>
+        <div class="sp-trust-item"><span class="sp-trust-num">90 Days</span><span class="sp-trust-lbl">Repair Warranty</span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" style="background:#fff;">
+      <div class="container-wide">
+        <div class="section-header reveal">
+          <span class="section-tag">COMMON PROBLEMS</span>
+          <h2 class="section-title">What We <span class="accent">Fix</span></h2>
+          <p class="section-desc">From heating failures to sparking issues — we handle all microwave problems safely and quickly.</p>
+        </div>
+        <div class="issues-grid reveal">
+          <div class="issue-card">
+            <div class="issue-icon"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
+            <h4>Not Heating</h4>
+            <p>Microwave runs but food stays cold? We replace faulty magnetrons, diodes, and capacitors to restore full heating power.</p>
+          </div>
+          <div class="issue-card">
+            <div class="issue-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+            <h4>Sparking Inside</h4>
+            <p>Sparking is dangerous and must be fixed immediately. We replace damaged waveguide covers, racks, and interior components.</p>
+          </div>
+          <div class="issue-card">
+            <div class="issue-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 5v2M12 17v2M5 12H3M21 12h-2M7.05 7.05L5.64 5.64M18.36 18.36l-1.41-1.41M7.05 16.95l-1.41 1.41M18.36 5.64l-1.41 1.41"/></svg></div>
+            <h4>Turntable Not Rotating</h4>
+            <p>A stuck turntable leads to uneven cooking. We fix motor failures, coupler issues, and track problems on all brands.</p>
+          </div>
+          <div class="issue-card">
+            <div class="issue-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <h4>Door Latch Broken</h4>
+            <p>A broken door latch prevents the microwave from starting. We repair or replace latch assemblies and door switches.</p>
+          </div>
+          <div class="issue-card">
+            <div class="issue-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h4>Display Not Working</h4>
+            <p>Blank or flickering display? We repair control boards, replace display modules, and restore all button functions.</p>
+          </div>
+          <div class="issue-card">
+            <div class="issue-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h4>Burning Smell</h4>
+            <p>Burning smell indicates internal component damage. We safely inspect and replace faulty parts before they cause further damage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#f8f8f8;">
+      <div class="container-wide">
+        <div class="section-header reveal">
+          <span class="section-tag">WHY US</span>
+          <h2 class="section-title">Why Choose <span class="accent">Kumar Homecare</span></h2>
+          <p class="section-desc">Safe, certified microwave repair by experienced technicians.</p>
+        </div>
+        <div class="feature-bar reveal">
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4>Same-Day Service</h4>
+            <p>Quick turnaround — your microwave repaired the same day you call us.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <h4>Safety First</h4>
+            <p>Microwave repairs involve high voltage. Our technicians are trained to handle them safely.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h4>90-Day Warranty</h4>
+            <p>All repairs backed by a 90-day warranty. If it fails again, we fix it for free.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" width="28" height="28"><line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <h4>Honest Pricing</h4>
+            <p>We share the full cost upfront before starting any work — no surprises ever.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#fff;">
+      <div class="container-wide">
+        <div class="section-header reveal">
+          <span class="section-tag">PROCESS</span>
+          <h2 class="section-title">How It <span class="accent">Works</span></h2>
+          <p class="section-desc">Fast, safe, and hassle-free microwave repair at your door.</p>
+        </div>
+        <div class="steps-inline reveal">
+          <div class="step-inline"><div class="step-num">1</div><h4>Call or WhatsApp</h4><p>Tell us the issue — we confirm your slot in 15 minutes.</p></div>
+          <div class="step-inline"><div class="step-num">2</div><h4>Technician Arrives</h4><p>Our expert is at your door within 30–60 minutes.</p></div>
+          <div class="step-inline"><div class="step-num">3</div><h4>Safe Diagnosis</h4><p>Free inspection, transparent cost quote before we proceed.</p></div>
+          <div class="step-inline"><div class="step-num">4</div><h4>Repaired ✓</h4><p>Fixed safely with genuine parts and a 90-day warranty.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#f8f8f8;padding:60px 0;overflow:hidden;">
+      <div class="container-wide" style="text-align:center;margin-bottom:32px;">
+        <span class="section-tag">BRANDS WE SERVICE</span>
+        <h2 class="section-title" style="margin-top:8px;">All Major <span class="accent">Brands</span></h2>
+      </div>
+      <div class="brand-slider-wrap">
+        <div class="brand-track">
+          <div class="brand-slide"><span class="brand-name">Samsung</span></div>
+          <div class="brand-slide"><span class="brand-name">LG</span></div>
+          <div class="brand-slide"><span class="brand-name">IFB</span></div>
+          <div class="brand-slide"><span class="brand-name">Panasonic</span></div>
+          <div class="brand-slide"><span class="brand-name">Whirlpool</span></div>
+          <div class="brand-slide"><span class="brand-name">Godrej</span></div>
+          <div class="brand-slide"><span class="brand-name">Haier</span></div>
+          <div class="brand-slide"><span class="brand-name">Bosch</span></div>
+          <div class="brand-slide"><span class="brand-name">Siemens</span></div>
+          <div class="brand-slide"><span class="brand-name">Morphy Richards</span></div>
+          <div class="brand-slide"><span class="brand-name">Samsung</span></div>
+          <div class="brand-slide"><span class="brand-name">LG</span></div>
+          <div class="brand-slide"><span class="brand-name">IFB</span></div>
+          <div class="brand-slide"><span class="brand-name">Panasonic</span></div>
+          <div class="brand-slide"><span class="brand-name">Whirlpool</span></div>
+          <div class="brand-slide"><span class="brand-name">Godrej</span></div>
+          <div class="brand-slide"><span class="brand-name">Haier</span></div>
+          <div class="brand-slide"><span class="brand-name">Bosch</span></div>
+          <div class="brand-slide"><span class="brand-name">Siemens</span></div>
+          <div class="brand-slide"><span class="brand-name">Morphy Richards</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-section">
+      <div class="container-wide">
+        <div class="price-inner">
+          <div>
+            <div class="price-badge"><svg viewBox="0 0 24 24" fill="none" width="14" height="14" style="display:inline;vertical-align:-2px;margin-right:5px"><path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22 4 12 14.01 9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Free Diagnosis</div>
+            <h2>Pay Only If You<br>Decide to Repair</h2>
+            <p>Microwave diagnosis is completely free. Our technician safely inspects your appliance, identifies the issue, and gives you a clear quote before touching anything. You decide — no pressure, zero risk.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px;align-items:flex-end;">
+            <a href="tel:+917053836368" class="btn btn-white"><svg viewBox="0 0 24 24" fill="none" width="15" height="15" style="display:inline;vertical-align:-2px;margin-right:6px"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Book Free Diagnosis</a>
+            <a href="https://wa.me/917053836368" target="_blank" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15" style="display:inline;vertical-align:-2px;margin-right:6px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>WhatsApp Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container-wide">
+        <div class="faq-layout">
+          <div class="faq-left reveal">
+            <span class="section-tag">FAQ</span>
+            <h2 class="section-title">Microwave Repair<br><span class="accent">Questions</span></h2>
+            <p>Still have questions? Give us a call anytime.</p>
+            <a href="tel:+917053836368" class="btn btn-primary" style="margin-top:20px">Call Us Now</a>
+          </div>
+          <div class="faq-right reveal reveal-delay sp-faq">
+            <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Is it safe to repair a microwave at home?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="#0f0f0f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-ans"><p>Microwaves contain high-voltage capacitors that can be dangerous. Our trained technicians safely discharge capacitors and follow proper safety procedures before any repair.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How much does microwave repair cost?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="#0f0f0f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-ans"><p>Repair costs vary by issue. Diagnosis is free. Typical repairs range from ₹300 to ₹2,500. Magnetron replacements may cost more. We quote before starting work.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Do you repair convection microwaves?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="#0f0f0f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-ans"><p>Yes! We repair solo, grill, and convection microwaves. All types, all brands — Samsung, LG, IFB, Panasonic, Whirlpool, Godrej, and more.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>My microwave is sparking — is it still repairable?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="#0f0f0f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-ans"><p>In most cases yes. Sparking is usually caused by a damaged waveguide cover or burnt rack — both easily replaceable. Stop using it immediately and call us for a safe inspection.</p></div></div>
+            <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Is there a warranty on microwave repair?</span><svg class="faq-arrow" viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M6 9l6 6 6-6" stroke="#0f0f0f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="faq-ans"><p>Yes — every repair comes with a 90-day service warranty. Same fault within 90 days? We come back and fix it at no extra cost.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-cta">
+      <div class="container-wide">
+        <h2>Book Your Microwave<br>Repair Today</h2>
+        <p>Same-day service · Free diagnosis · 90-day warranty</p>
+        <div class="sp-cta-phone"><svg viewBox="0 0 24 24" fill="none" width="22" height="22" style="display:inline;vertical-align:-5px;margin-right:8px"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>+91 70538 36368</div>
+        <div class="sp-cta-btns">
+          <a href="tel:+917053836368" class="btn btn-white">Call Now</a>
+          <a href="https://wa.me/917053836368" target="_blank" class="btn btn-wa">WhatsApp</a>
+          <a href="index.html#contact" class="btn" style="background:rgba(255,255,255,0.12);color:#fff;border:1.5px solid rgba(255,255,255,0.2);">Book Online</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container-wide footer-top">
+      <div class="footer-brand-col">
+        <div class="logo footer-logo"><div class="logo-icon logo-icon-sm"><img src="/public/logo.png" alt="Kumar Homecare Services"></div><div class="logo-text"><span class="logo-brand" style="color:#fff">KUMAR</span><span class="logo-sub" style="color:rgba(255,255,255,0.45)">Homecare Services</span></div></div>
+        <p class="footer-tagline">Professional doorstep appliance repair with 20+ years of trusted experience across Delhi NCR.</p>
+        <div class="footer-social">
+          <a href="tel:+917053836368" class="social-btn" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" width="17" height="17"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a href="https://wa.me/917053836368" target="_blank" class="social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" width="17" height="17"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+          <a href="mailto:ankit6368pal@gmail.com" class="social-btn" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" width="17" height="17"><path d="M4 7l8 5 8-5M4 6h16a1 1 0 011 1v11a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4 class="footer-heading">Services</h4><ul class="footer-links"><li><a href="fridge-repair.html">Refrigerator Repair</a></li><li><a href="microwave-repair.html">Microwave Repair</a></li><li><a href="index.html#services">Oven Repair</a></li><li><a href="washing-machine-repair.html">Washing Machine Repair</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-heading">Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="index.html#why-us">Why Choose Us</a></li><li><a href="index.html#reviews">Reviews</a></li><li><a href="index.html#contact">Book Service</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-heading">Contact</h4><ul class="footer-contact-list"><li><svg viewBox="0 0 24 24" fill="none" width="15" height="15" class="fc-icon"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><a href="tel:+917053836368">+91 70538 36368</a></li><li><svg viewBox="0 0 24 24" fill="none" width="15" height="15" class="fc-icon"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Mon–Sun, 8 AM – 10 PM</span></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="container-wide footer-bottom-inner"><p>© <span id="footerYear"></span> Kumar Homecare Services. All Rights Reserved.</p><p>Professional Microwave Repair · Delhi NCR</p></div></div>
+  </footer>
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
