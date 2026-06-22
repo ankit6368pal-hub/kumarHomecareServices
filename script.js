@@ -18,6 +18,27 @@ window.addEventListener('load', () => {
 });
 
 /* ──────────────────────────────────
+   DARK / LIGHT MODE TOGGLE
+────────────────────────────────── */
+const themeToggle       = document.getElementById('themeToggle');
+const themeToggleMobile = document.getElementById('themeToggleMobile');
+const html = document.documentElement;
+
+// Apply saved theme on load
+const savedTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', savedTheme);
+
+function toggleTheme() {
+  const current = html.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+}
+
+themeToggle       && themeToggle.addEventListener('click', toggleTheme);
+themeToggleMobile && themeToggleMobile.addEventListener('click', toggleTheme);
+
+/* ──────────────────────────────────
    NAVBAR scroll effect + active links
 ────────────────────────────────── */
 const navbar  = document.getElementById('navbar');
@@ -452,3 +473,76 @@ function initSlider() {
   slider.addEventListener('mouseenter', stop);
   slider.addEventListener('mouseleave', start);
 }
+
+/* ──────────────────────────────────
+   MOBILE REVIEWS AUTO-SLIDER
+────────────────────────────────── */
+(function initMobileReviews() {
+  const track = document.getElementById('reviewsTrack');
+  if (!track) return;
+
+  let autoSlide;
+  let currentIndex = 0;
+
+  function getCards() {
+    // Only the visible cards (first 6, duplicates hidden by CSS)
+    return Array.from(track.querySelectorAll('.review-card')).slice(0, 6);
+  }
+
+  function scrollToCard(index) {
+    const cards = getCards();
+    if (!cards.length) return;
+    const card = cards[index];
+    track.scrollTo({ left: card.offsetLeft - 12, behavior: 'smooth' });
+    currentIndex = index;
+  }
+
+  function nextCard() {
+    const cards = getCards();
+    const next = (currentIndex + 1) % cards.length;
+    scrollToCard(next);
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoSlide = setInterval(nextCard, 3000);
+  }
+
+  function stopAuto() {
+    if (autoSlide) clearInterval(autoSlide);
+  }
+
+  function onlyMobile() {
+    return window.innerWidth <= 768;
+  }
+
+  function init() {
+    if (!onlyMobile()) { stopAuto(); return; }
+    scrollToCard(0);
+    startAuto();
+
+    // Pause on touch, resume after 5s
+    track.addEventListener('touchstart', () => {
+      stopAuto();
+    }, { passive: true });
+
+    track.addEventListener('touchend', () => {
+      // Detect which card is most in view after swipe
+      setTimeout(() => {
+        const cards = getCards();
+        const trackRect = track.getBoundingClientRect();
+        let closest = 0, minDist = Infinity;
+        cards.forEach((card, i) => {
+          const cardRect = card.getBoundingClientRect();
+          const dist = Math.abs(cardRect.left - trackRect.left);
+          if (dist < minDist) { minDist = dist; closest = i; }
+        });
+        currentIndex = closest;
+        setTimeout(startAuto, 5000);
+      }, 300);
+    }, { passive: true });
+  }
+
+  window.addEventListener('load', init);
+  window.addEventListener('resize', init);
+})();
