@@ -1160,6 +1160,18 @@ section, header, footer, main, nav, div { max-width: 100%; }
   padding: 44px 40px;
   box-shadow: 0 0 0 1.5px var(--grey-200), var(--shadow-lg);
 }
+/* Google Form embed */
+.google-form-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  margin-top: 8px;
+}
+.google-form-wrap iframe {
+  border: none;
+  display: block;
+  width: 100%;
+}
 .form-title    { font-size: 1.3rem; font-weight: 800; color: var(--black); margin-bottom: 6px; }
 .form-subtitle { font-size: 0.85rem; color: var(--grey-500); margin-bottom: 28px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
